@@ -13,18 +13,18 @@ This faucet app allows anyone who passes a captcha to request tokens for a Cosmo
         - Site key: `6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI`
         - Secret key: `6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe`
 
-3. Install [secretcli](https://github.com/enigmampc/SecretNetwork/releases) on the server. `secretcli`'s version has to be compatible with the testnet.
+3. Install [quicksilverd](https://github.com/ingenuity-build/quicksilver/releases) on the server. `quicksilverd`'s version has to be compatible with the testnet.
 
-4. Configure `secretcli`:
+4. Configure `quicksilverd`:
     ```
-    sudo secretcli config indent true
-    sudo secretcli config keyring-backend test
-    sudo secretcli config trust-node true
+    sudo quicksilverd config indent true
+    sudo quicksilverd config keyring-backend test
+    sudo quicksilverd config trust-node true
     ```
 
 3. Create the the faucet account on the machine that is going to run the faucet.
     ```
-    secretcli keys add <name of the account> --keyring-backend=test
+    quicksilverd keys add <name of the account> --keyring-backend=test
     ```
 
 4. Make sure the faucet account have funds. The faucet basically performs a `tx send` for every token request, so make sure the faucet account have enough tokens (more tokens could be added later by sending more funds to the faucet account).
