@@ -43,6 +43,7 @@ This faucet app allows anyone who passes a captcha to request tokens for a Cosmo
     - `FAUCET_KEY` - The account alias that will hold the faucet funds.
     - `FAUCET_NODE` - Address of a full node/validator that the CLI will send txs to e.g. tcp://domain.name:26657
     - `LOCAL_RUN` - Option for local run for debug. Not supported for now, should leave as `false`.
+    - `GAS_PRICES` - Set gas price
     - Other parameters should be left unchanged.
 
 7. Build:
