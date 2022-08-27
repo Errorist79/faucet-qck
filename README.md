@@ -17,9 +17,7 @@ This faucet app allows anyone who passes a captcha to request tokens for a Cosmo
 
 4. Configure `quicksilverd`:
     ```
-    sudo quicksilverd config indent true
-    sudo quicksilverd config keyring-backend test
-    sudo quicksilverd config trust-node true
+    quicksilverd config keyring-backend test
     ```
 
 3. Create the the faucet account on the machine that is going to run the faucet.
@@ -54,7 +52,7 @@ This faucet app allows anyone who passes a captcha to request tokens for a Cosmo
 
 8. Deploy to server. You can do it manually by copying the `bin/` directory or run `make deploy` (make sure to change the makefile to match your server's address i.e. `scp -r ./bin user-name@your.domain:~/`)
 
-10. (optional) Configure [Caddy](https://caddyserver.com/docs/). You can use [this](https://github.com/enigmampc/testnet-faucet/blob/master/caddy/Caddyfile) as a simple template.
+10. (optional) Configure [Caddy](https://caddyserver.com/docs/). You can use [this](https://github.com/Errorist79/faucet-qck/blob/master/caddy/Caddyfile) as a simple template.
 
 11. (optional) You can start the server by running the `./path/to/bin/faucet` binary. It is recommended to create a systemd unit. For example (change parameters for your own deployment):
     ```
@@ -64,8 +62,8 @@ This faucet app allows anyone who passes a captcha to request tokens for a Cosmo
 
     [Service]
     Type=simple
-    WorkingDirectory=/home/ubuntu/testnet-faucet/bin
-    ExecStart=/home/ubuntu/testnet-faucet/bin/faucet
+    WorkingDirectory=/home/ubuntu/faucet-qck/bin
+    ExecStart=/home/ubuntu/faucet-qck/bin/faucet
     User=ubuntu
     Restart=always
     StartLimitInterval=0
