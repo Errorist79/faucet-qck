@@ -11,7 +11,7 @@
   //-   img(src="~assets/logo.png" width="270" height="311")
   router-view
   notifications(:notifications='notifications' theme='cosmos')
-  #bottom &copy; 2018 Interchain Foundation
+  #bottom &copy; quicksilver.zone
 </template>
 
 
