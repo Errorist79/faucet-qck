@@ -6,7 +6,7 @@
       .key testnet:
       .value {{ config.chain }}
     //- .right
-    //-   a(href="https://testnet.explorer.testnet.run/Quicksilver" target="_blank") explorer #[i.material-icons assessment]
+    //-   a(href="https://poolparty.stride.zone/STRIDE" target="_blank") explorer #[i.material-icons assessment]
   //- .logo
   //-   img(src="~assets/logo.png" width="270" height="311")
   router-view

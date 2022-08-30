@@ -1,6 +1,6 @@
 <template lang="pug">
 .section-header
-  h1 Quicksilver Innuendo-1 Faucet
+  h1 STRIDE-TESTNET-4 Faucet
   p Use this faucet to get tokens for the #[span.chain {{ config.chain }}] testnet. Please don't abuse this service&mdash;the number of available tokens is limited.
 </template>
 
