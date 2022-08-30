@@ -4,7 +4,7 @@
     h1 Don't have a testnet address?
 
   .section-main
-    btn(type="anchor" href="https://quicksilver.zone" value="" size="lg" target="_blank" icon="wifi_tethering")
+    btn(type="anchor" href="https://stride.zone" value="" size="lg" target="_blank" icon="wifi_tethering")
 </template>
 
 <script>

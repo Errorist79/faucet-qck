@@ -185,7 +185,7 @@ func getCoinsHandler(w http.ResponseWriter, request *http.Request) {
 	// send the coins!
 	if captchaPassed {
 		sendFaucet := fmt.Sprintf(
-			"quicksilverd tx bank send %v %v %v --gas-prices=%v --chain-id=%v --node=%v --keyring-backend=test --output=json -y",
+			"gaiad tx bank send %v %v %v --gas-prices=%v --chain-id=%v --node=%v --keyring-backend=test --output=json -y",
 			key, encodedAddress, amountFaucet, gasPrices, chain, node)
 		fmt.Println(time.Now().UTC().Format(time.RFC3339), encodedAddress, "[1]")
 		fmt.Println("Executing cmd:", sendFaucet)
